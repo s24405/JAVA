@@ -1,0 +1,50 @@
+
+public class TabliceLiczby {
+
+    public static void main(String[] args) {
+        Scanner skaner = new Scanner(System.in);
+        System.out.println("Podaj ile liczb wprowadzisz: ");
+        int liczbaPomiarow = skaner.nextInt();
+     
+public class TabliceLiczby {
+ 
+    public static void main(String[] args) {
+        Scanner skaner = new Scanner(System.in);
+        System.out.println("Podaj ile liczb wprowadzisz: ");
+        int liczbaPomiarow = skaner.nextInt();
+        // deklaracja i tworzenie tablicy o długości podanej przez użytkownika
+        double[] pomiary = new double[liczbaPomiarow];
+        
+        // nprowadzanie danych
+        for (int i = 0; i < pomiary.length; i++) {
+            System.out.print(" Podaj " + i + " liczbę: ");
+            pomiary[i] = skaner.nextDouble();
+        }
+        
+        // Dla klarowności programu rozbiłem dalsze operacje na poszczególne
+        // pętle - dałoby się je zmieścić w jednej
+        
+        // szukanie największej liczby
+        // max - największa aktualnie liczba, ponieważ wiemy, 
+        // że pomiary będą > 0, mamy pewność, że będą większe 
+        // niż wartośc początkowa -1
+        double max = -1;
+        for(double pomiar: pomiary) {
+            if(pomiar > max) 
+                max = pomiar;
+        }
+        System.out.println("Największy pomiar: " + max);
+        
+        // Obliczanie średniej
+        // Sumowanie elementów
+        double suma = 0;
+        for(double pomiar : pomiary) {
+            suma += pomiar;
+        }
+        System.out.println("Suma pomiarów: " + suma);
+        
+        // Obliczanie średniej
+        double srednia = suma/pomiary.length;
+        System.out.println("Średnia pomiarów: " + srednia);     
+    }   
+}

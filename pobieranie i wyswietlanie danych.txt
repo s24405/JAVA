@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+class Hello {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Jak masz na imię?"); // w "" dac dane
+        String firstName = scan.nextLine(); // string cos tam to nazwa dany pobieranej
+
+        System.out.println("Witaj " + firstName);
+    }
+}
