@@ -1,3 +1,50 @@
+public class Remote {
+    TV TV = new TV();
+    public void turn_on(boolean status){
+        status = true;
+    }
+    public void turn_off(boolean status){
+        status = false;
+    }
+    public int channel_up(int kanal){
+        if (kanal<=20 && kanal >= 0){
+            TV.channel++;
+            return TV.channel++;
+        }else {
+            return kanal;
+        }
+    }
+    public int channel_down(int kanal){
+        if (kanal<=20 && kanal >= 0){
+            TV.channel--;
+            return TV.channel;
+        }else {
+            return TV.channel;
+        }
+
+    }
+    public int volume_up(int vol){
+        if (vol<10 && vol >= 0){
+            TV.volume++;
+            return TV.volume;
+        }else {
+            return TV.volume;
+        }
+
+    }
+    public int volume_down(int vol){
+        if (vol<=10 && vol >= 0){
+            TV.volume++;
+            return TV.volume;
+        }else {
+            return TV.volume;
+        }
+
+    }
+
+}
+
+
 public class Dog {
     String breed, color;
     int age;
