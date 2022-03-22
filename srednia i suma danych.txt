@@ -1,3 +1,17 @@
+public class Dog {
+    String breed, color;
+    int age;
+    public void bark(){
+        System.out.print("pies szczeka! \n");
+    }
+    public void sleep(){
+        System.out.println("pies idzie spac! \n");
+    }
+
+}
+
+
+
 String breed, color;
     int age;
     public void bark(){
