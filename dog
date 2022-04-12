@@ -1,0 +1,33 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("pies zaszczeka");
+        System.out.println("woof woof");
+        System.out.println("pies zaszczeka 5 razy"); // w "" dac dane
+        for (int x = 0; x < 5; x++) {
+        System.out.println("woof woof");
+            }
+
+        }
+
+        }
+
+
+
+
+
+package com.company;
+
+public class Dog {
+
+
+        public void szczekaj()
+        {
+            System.out.println("Woof Woof");
+        }
+
+}
